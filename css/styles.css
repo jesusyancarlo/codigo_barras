@@ -1,7 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 body {
+    background-image: url('../img/background.png'); 
+    background-size: cover;        
+    background-position: center;        
+    background-repeat: no-repeat;      
+    background-attachment: fixed;   
+    
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
-    margin: 0;
+    color: #fff;
+}
+
+.Verificador {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+    
+    border: 4px solid #ffffff; 
+    border-radius: 16px;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.logo {
+    max-width: 150px;
+    height: auto;
+    margin-bottom: 15px;
+    border: none; /* Asegura que no tenga borde */
+}
+#titulo {
+    font-size: 2.5rem;
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #fff; 
+    font-weight: 700;
+}
+
+/* IMAGEN / CÓDIGO DE BARRAS (SIN BORDE BLANCO) */
+.img, #imagen {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    display: block;
+    
+    /* Se eliminaron los bordes blancos de aquí */
+    border: none; 
+}
+
+/* TEXTO INFERIOR EN NEGRO */
+#nombre_precio {
+    font-size: 1.8rem; 
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #fff; 
+    font-weight: 700;
 }
